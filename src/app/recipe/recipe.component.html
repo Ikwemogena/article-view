@@ -1,0 +1,18 @@
+<body>
+    <header>
+        <h1>ARTICLES-LIST</h1>
+    </header>
+
+    <div class="post-cards">
+        <div class="post-card" *ngFor="let post of posts" (click)="selectPost(post)">
+            <h3 class="big-p" >{{ post.title }}</h3>
+        </div>
+    </div>
+
+    <div class="posts" >
+        <h2 *ngIf="selectedPost" >{{ selectedPost.title }}</h2>
+        <p *ngIf="selectedPost" class="post-p">{{ selectedPost.article }}</p>
+        <p *ngIf="selectedPost" class="genre">Category: {{ selectedPost.genre }}</p>        
+    </div>
+    
+</body>

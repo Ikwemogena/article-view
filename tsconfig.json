@@ -19,6 +19,9 @@
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
+    // "module": "commonjs",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "lib": [
       "ES2022",
       "dom"
